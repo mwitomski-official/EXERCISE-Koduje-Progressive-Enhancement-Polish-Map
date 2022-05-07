@@ -1,14 +1,136 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <title>
       Koduje | Progressive Enhancement i clip-path: Interaktywna mapa województw
     </title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
   <body>
-    <img src="map.png" alt="Mapa województw Polski" />
+    <header>
+      <h1>Ori<span class="accent">o</span>n</h1>
+    </header>
+    <main>
+      <article>
+        <p>
+          Youtube tutorial:
+          <a class="accent" href="https://www.youtube.com/watch?v=ezRV-bphr2g"
+            >Click here!</a
+          >
+        </p>
+        <p>
+          Tool to create custom CSS clip path:
+          <a class="accent" href="https://bennettfeely.com/clippy/"
+            >CSS clip-path maker</a
+          >
+        </p>
+      </article>
+      <div class="container">
+        <div class="box map">
+          <img src="img/map.png" alt="Mapa województw Polski" />
+          <ul>
+            <li class="zachodniopomorskie">
+              <a
+                href="https://pl.wikipedia.org/wiki/Województwo_zachodniopomorskie"
+                ><span class="visually-hidden">zachodniopomorskie</span></a
+              >
+            </li>
+            <li class="pomorskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_pomorskie"
+                ><span class="visually-hidden">pomorskie</span></a
+              >
+            </li>
+            <li class="warminsko-mazurskie">
+              <a
+                href="https://pl.wikipedia.org/wiki/Województwo_warmińsko-mazurskie"
+              >
+                <span class="visually-hidden">warminsko-mazurskie</span>
+              </a>
+            </li>
+            <li class="podlaskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_podlaskie"
+                ><span class="visually-hidden">podlaskie</span></a
+              >
+            </li>
+            <li class="lubuskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_lubuskie"
+                ><span class="visually-hidden">lubuskie</span></a
+              >
+            </li>
+            <li class="wielkopolskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_wielkopolskie"
+                ><span class="visually-hidden">wielkopolskie</span></a
+              >
+            </li>
+            <li class="kujawsko-pomorskie">
+              <a
+                href="https://pl.wikipedia.org/wiki/Województwo_kujawsko-pomorskie"
+                ><span class="visually-hidden">kujawsko-pomorskie</span></a
+              >
+            </li>
+            <li class="mazowieckie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_mazowieckie"
+                ><span class="visually-hidden">mazowieckie</span></a
+              >
+            </li>
+            <li class="dolnoslaskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_dolnośląskie"
+                ><span class="visually-hidden">dolnośląskie</span></a
+              >
+            </li>
+            <li class="lodzkie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_łódzkie"
+                ><span class="visually-hidden">łódzkie</span></a
+              >
+            </li>
+            <li class="lubelskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_lubelskie"
+                ><span class="visually-hidden">lubelskie</span></a
+              >
+            </li>
+            <li class="opolskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_opolskie"
+                ><span class="visually-hidden">opolskie</span></a
+              >
+            </li>
+            <li class="slaskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_śląskie"
+                ><span class="visually-hidden">śląskie</span></a
+              >
+            </li>
+            <li class="swietokrzyskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_świetokrzyskie"
+                ><span class="visually-hidden">świętokrzyskie</span></a
+              >
+            </li>
+            <li class="malopolskie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_małopolskie"
+                ><span class="visually-hidden">małopolskie</span></a
+              >
+            </li>
+            <li class="podkarpackie">
+              <a href="https://pl.wikipedia.org/wiki/Województwo_podkarpackie"
+                ><span class="visually-hidden">podkarpackie</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box site">
+          <iframe sandbox="" id="description"></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Created at <span class="accent">Mateusz Witomski</span> 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
