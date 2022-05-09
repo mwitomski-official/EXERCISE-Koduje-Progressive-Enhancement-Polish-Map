@@ -21,14 +21,13 @@ h2 {
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  gap: 15px;
   grid-auto-flow: dense;
 }
 
 .box {
   border: 1px solid #ff9900;
   border-radius: 5px;
-  padding: 15px;
   min-height: 300px;
 }
 
@@ -36,11 +35,9 @@ h2 {
 .map {
   position: relative;
   /* aspect-ratio: 523/478; */
-  aspect-ratio: 523/400;
-}
-
-.map img {
-  filter: brightness(1.5);
+  /* aspect-ratio: 523/400; */
+  /* aspect-ratio: 1024/478; */
+  aspect-ratio: 1 / 0.75;
 }
 
 .map ul,
@@ -55,6 +52,10 @@ h2 {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.map img {
+  filter: brightness(1.5);
 }
 
 .map a:hover,
@@ -273,11 +274,12 @@ footer {
 }
 
 /* Media */
-@media (min-width: 300px) {
+@media (max-width: 630px) {
   .map,
   .site {
-    grid-column: span 3;
-    grid-row: span 3;
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: 1 / 1;
   }
 }
 
